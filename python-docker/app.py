@@ -56,6 +56,7 @@ def predict():
         # Возврат результата
         return jsonify({
             "clientId": data.get("clientId"),
+            "organizationId" : data.get('organizationId'),
             "recommendedMethod": results[predicted_class]
         })
     except Exception as e:
