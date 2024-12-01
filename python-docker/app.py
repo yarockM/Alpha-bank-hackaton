@@ -49,7 +49,8 @@ def predict():
         predicted_class = label_encoder.inverse_transform([predicted_class_encoded])[0]
         
 
-        results = {'PayControl':1,
+        results = {'None': 0,
+            'PayControl':1,
         'КЭП на токене':2,
         'КЭП в приложении':3}
         
