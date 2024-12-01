@@ -7,8 +7,8 @@ from custom_transformers import MultiLabelBinarizerTransformer
 app = Flask(__name__)
 
 # Загрузка модели и LabelEncoder
-MODEL_PATH = "model_pipeline.joblib"
-LABEL_ENCODER_PATH = "label_encoder.joblib"
+MODEL_PATH = "python-docker/model_pipeline.joblib"
+LABEL_ENCODER_PATH = "python-docker/label_encoder.joblib"
 pipeline = joblib.load(MODEL_PATH)
 label_encoder = joblib.load(LABEL_ENCODER_PATH)
 
